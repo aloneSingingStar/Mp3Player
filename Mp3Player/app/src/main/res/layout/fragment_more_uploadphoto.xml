@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/background_openaccount">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_openaccount">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="请保证身份证拍摄完整，无反光，文字清晰"
+    android:gravity="center"/>
+        </LinearLayout>
+
+    <include layout="@layout/view_account_open_divider"></include>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_takephoto"
+    android:gravity="center">
+
+<RelativeLayout
+    android:id="@+id/rl_takephoto" android:layout_width="190dp"
+    android:layout_height="120dp"
+    android:layout_weight="1"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="60dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/id_front" android:gravity="center">
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/add_icon_pressed"
+        android:scaleType="fitXY"/>
+    </RelativeLayout>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="请点此拍照或选择"
+            android:layout_below="@id/rl_takephoto"
+            android:id="@+id/tv_hint"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+
+
+
+</RelativeLayout>
+    <include layout="@layout/view_account_open_divider"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="根据证监会要求，用户必须上传面部照"
+    android:textColor="@color/error_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="下一步"
+            android:textSize="20dp"
+            android:background="@color/main_btn_pressed"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="重新拍照或选择"
+            android:textSize="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

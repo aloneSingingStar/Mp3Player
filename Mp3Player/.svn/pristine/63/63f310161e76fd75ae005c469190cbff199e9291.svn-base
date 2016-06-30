@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+<!--【1】layout_alignParentBottom
+【2】 android:layout_height="50dp"的值如果设为65dp,
+则 android:drawableTop="@drawable/ic_reading"将会寻找像素更大的图片来适应，
+如果没有更小的图片，则会把文字覆盖
+-->
+    <RadioGroup
+    android:id="@+id/rg_bottom_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/bottom_bg_day"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/re_reading"
+        style="@style/rb_bottom_bar"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_reading"
+        android:focusable="false"
+        android:text="读物"/>
+    <RadioButton
+        android:id="@+id/re_music"
+        style="@style/rb_bottom_bar"
+        android:checked="true"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_music"
+        android:focusable="false"
+        android:text="音乐"/>
+
+    <RadioButton
+        android:id="@+id/re_video"
+        style="@style/rb_bottom_bar"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_video"
+        android:focusable="false"
+        android:text="视频"/>
+    <RadioButton
+        android:id="@+id/re_sport"
+        style="@style/rb_bottom_bar"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_sport"
+        android:focusable="false"
+        android:text="运动"/>
+    <RadioButton
+        android:id="@+id/re_cook"
+        style="@style/rb_bottom_bar"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_cook"
+        android:focusable="false"
+        android:text="菜肴"/>
+
+    <RadioButton
+        android:id="@+id/re_other"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="#FFD77BD7"
+        android:gravity="bottom|center"
+        android:paddingTop="12dip"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_more"
+        android:focusable="false"
+        android:text=""/>
+    </RadioGroup>
+<LinearLayout
+    android:id="@+id/ll_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@id/rg_bottom_bar"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    >
+    </LinearLayout>
+    </RelativeLayout>

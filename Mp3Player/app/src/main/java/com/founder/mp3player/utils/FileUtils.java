@@ -1,0 +1,121 @@
+package com.founder.mp3player.utils;
+
+import android.os.Environment;
+
+import com.founder.mp3player.model.Mp3Info;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOError;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by Administrator on 2015/7/6.
+ */
+public class FileUtils {
+    private String SDCardRoot;
+    public FileUtils(){
+        //得到当前外部设备的目录
+        SDCardRoot= Environment.getExternalStorageDirectory().getAbsolutePath();
+    }
+
+    /**
+     * 在SD卡上创建文件
+     * @param fileName
+     * @param dir
+     * @return
+     * @throws IOException
+     */
+    public File createFileInSDCard(String fileName,String dir)throws IOException{
+        File file=new File(SDCardRoot+File.separator+dir+File.separator+fileName);
+        file.createNewFile();
+        return file;
+    }
+
+    /**
+     * 在SD卡上创建目录
+     * @param dir
+     * @return
+     */
+    public File createSDDir(String dir){
+        File dirFile=new File(SDCardRoot+File.separator+dir+File.separator);
+        dirFile.mkdirs();
+        return dirFile;
+    }
+
+    /**
+     * 判断SD卡上的文件夹是否存在
+     * @param fileName
+     * @param path
+     * @return
+     */
+    public  boolean isFileExist(String fileName,String path){
+        File file=new File(SDCardRoot+File.separator+path+File.separator+fileName);
+        return file.exists();
+    }
+
+    /**
+     * 将一个InputStream里的数据写入打SD卡上
+     * @param path
+     * @param fileName
+     * @param input
+     * @return
+     */
+    public File write2SDFromInput(String path,String fileName,InputStream input){
+        File file=null;
+        OutputStream output=null;
+        try {
+            createSDDir(path);
+            file = createFileInSDCard(fileName, path);
+            output=new FileOutputStream(file);
+            byte buffer[]=new byte[4*1024];
+            int temp;
+            while ((temp=input.read(buffer))!=-1){
+                output.write(buffer,0,temp);
+            }
+            output.flush();
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+        finally {
+            if (output!=null){
+                try {
+                    output.close();
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+        return file;
+    }
+
+    /**
+     * 获得本地MP3文件名和大小
+     * @param path
+     * @return
+     */
+   public List<Mp3Info> getMp3Files(String path){
+       List<Mp3Info> mp3InfoList=new ArrayList<Mp3Info>();
+       Mp3Info mp3Info=null;
+       File file=new File(SDCardRoot+File.separator+path);
+       File [] files=file.listFiles();
+       //还没有创建MP3这个文件夹时，获得的files是空的
+       if(files!=null){
+           for (int i=0;i<files.length;i++){
+               if (files[i].getName().endsWith("mp3")||files[i].getName().endsWith("MP3")){
+                   mp3Info=new Mp3Info();
+                   mp3Info.setMp3Name(files[i].getName());
+                   mp3Info.setMp3Size(files[i].length()+"");
+                   mp3InfoList.add(mp3Info);
+               }
+           }
+       }
+
+       return mp3InfoList;
+   }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="G:\WorkSpace\AndroidStudioProjects\Mp3Player\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="G:\WorkSpace\AndroidStudioProjects\Mp3Player\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-d7f3e8be7f217532183f8a77ae7450ee97b64181.jar" />
+    </item>
+    <item
+        jar="G:\WorkSpace\AndroidStudioProjects\Mp3Player\app\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9aa93835393824b436f366120c9ba8a0260ce75d">
+        <dex dex="G:\WorkSpace\AndroidStudioProjects\Mp3Player\app\build\intermediates\pre-dexed\debug\classes-3b6854f7985c7c1ae2dc53ffbc6ce6e18a68aef9.jar" />
+    </item>
+    <item
+        jar="D:\Users\Administrator\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="G:\WorkSpace\AndroidStudioProjects\Mp3Player\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-62d2250b779f2f1b7b079d4a13ebe5af1298c217.jar" />
+    </item>
+    <item
+        jar="G:\WorkSpace\AndroidStudioProjects\Mp3Player\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="G:\WorkSpace\AndroidStudioProjects\Mp3Player\app\build\intermediates\pre-dexed\debug\classes-cc46acad2a5e1aa808b47ca611d24035b1e4d0c0.jar" />
+    </item>
+    <item
+        jar="G:\WorkSpace\AndroidStudioProjects\Mp3Player\app\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="79a5b6d9fbab3b5fb4c6f86a1ed7a17722fd937b">
+        <dex dex="G:\WorkSpace\AndroidStudioProjects\Mp3Player\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-735804f85fa202d33fa15b9c701990dbc057ac78.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--添加修改此处item必须顺序保持一致，每个array的数量必须相同，防止数组越界-->
+    <array name="day_color">
+        <!--*******行情白天颜色*******************-->
+        <!--2碎片头背景-->
+        <item name="day_fragment_title_background">#f1f1f1</item>
+        <!--34根背景黑白-->
+        <item>#ffffff</item>
+    </array>
+
+
+    <array name="night_color">
+        <!--*******行情夜间颜色**************************************************************-->
+        <!--2碎片头背景-->
+        <item name="night_fragment_title_background">#202020</item>
+        <!--34根背景黑白-->
+        <item>#000000</item>
+    </array>
+
+
+    <!--白天图标及selector-->
+    <array name="day_icon">
+        <!--2-->
+        <item>@drawable/n_news_select</item>
+    </array>
+
+    <!--黑夜图标及selector-->
+    <array name="night_icon">
+        <!--2-->
+        <item>@drawable/n_news_select</item>
+    </array>
+</resources>

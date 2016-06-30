@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="5dp"/>
+    <solid android:color="@color/price_common_gray4"/>
+</shape>
+<!--在Android开发过程中，经常需要改变控件的默认样式，
+那么通常会使用多个图片来解决。不过这种方式可能需要多个图片，
+比如一个按钮，需要点击时的式样图片，默认的式样图片。
+这样就容易使apk变大,自定义图形shape，
+Android上支持以下几种属性shape、gradient、stroke、corners、padding、solid等-->

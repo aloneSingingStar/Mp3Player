@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 行情列表页面布局,整个屏幕显示区域 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    style="@style/price_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <!-- 头部标题导航条 -->
+    <RelativeLayout
+        android:id="@+id/rl_price_head_title"
+        android:background="#D80C18"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <!-- 自选股编辑 -->
+        <ImageView
+            android:id="@+id/iv_edit_zxg"
+            android:layout_height="match_parent"
+            android:layout_width="50dp"
+            android:padding="13dp"
+            android:src="@drawable/btn_edit_optional"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            />
+        <!-- 标题 -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="读物"
+            android:textSize="22sp"
+            android:textColor="@color/n_prices_optional0"
+            />
+
+        <!--搜索按鈕-->
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:src="@drawable/btn_search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/iv_changeskin"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:src="@drawable/btn_night"
+            android:layout_toLeftOf="@+id/iv_search"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <!-- 搜索输入框 -->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_search_input_area"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_search_bar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="35dp">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <!-- 放大镜图片 -->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_search"
+                android:layout_height="20dp"/>
+            <!-- 搜索提示标语 -->
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:text="输入股票名称/代码添加自选股"
+                android:textColor="@color/price_common_gray3"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/list_title"
+        android:background="@color/n_prices_optional2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/ra_emotion"
+            android:gravity="center"
+            android:textColor="@color/n_prices_optional1"
+            android:textSize="15sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:text="情感" />
+
+        <TextView
+            android:id="@+id/ra_social"
+            android:gravity="center"
+            android:textColor="@color/n_prices_optional1"
+            android:textSize="15sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:text="社会" />
+
+        <TextView
+            android:id="@+id/ra_encyclopedia"
+            android:gravity="center"
+            android:textColor="@color/n_prices_optional1"
+            android:textSize="15sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:text="百科" />
+        <TextView
+            android:id="@+id/ra_learning"
+            android:gravity="center"
+            android:textColor="@color/n_prices_optional1"
+            android:textSize="15sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:text="学习" />
+        <TextView
+            android:id="@+id/ra_literature"
+            android:gravity="center"
+            android:textColor="@color/n_prices_optional1"
+            android:textSize="15sp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:text="文学" />
+
+    </LinearLayout>
+    <!-- 滑道 -->
+    <LinearLayout
+        android:id="@+id/cursor_track"
+        android:background="#F1F1F1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip" >
+        <ImageView
+            android:id="@+id/cursorlight"
+            style="@style/price_second_level_title_nav_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:background="#D80C18" />
+    </LinearLayout>
+
+
+    <!-- Fragment包涵体 -->
+
+    <com.founder.mp3player.views.ReadFragmentViewPager
+        android:id="@+id/pagecontent_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

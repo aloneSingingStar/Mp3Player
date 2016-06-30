@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">唯美印象</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_update_list">更新列表</string>
+    <string name="menu_about">关于</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="title_activity_reading">ReadingActivity</string>
+    <string name="title_activity_html5">Html5Activity</string>
+    <string name="title_activity_more">MoreActivity</string>
+
+    <!--more模块-->
+    <string name="checkPhone">1手机验证</string>
+    <string name="openAccount">2开立账户</string>
+    <string name="openConfirm">3开户确认</string>
+
+    <string name="phoneNum">手机号</string>
+    <string name="vertificationCode">验证码</string>
+    <string name="recommandPerson">推荐人</string>
+    <string name="sendVertificationcode">发送验证码</string>
+    <string name="title_validate">验证手机</string>
+    <string name="title_openAccount">开立账户</string>
+</resources>

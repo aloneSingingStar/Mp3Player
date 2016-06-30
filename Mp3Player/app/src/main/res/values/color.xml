@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--底部菜单字体颜色-->
+    <color name="bottom_day_default">#5c5c5c</color>
+    <!-- 数字红 -->
+    <color name="red">#d70b17</color>
+
+    <color name="price_common_white">#ffffff</color>
+
+    <!--自选标题字体-->
+    <color name="n_prices_optional0">#ffffff</color>
+
+    <color name="price_common_gray4">#d4dae3</color>
+
+    <color name="price_common_gray3">#878787</color>
+
+    <!--自选，沪深，新股，港股，个股期权背景颜色-->
+    <color name="n_prices_optional2">#f1f1f1</color>
+
+    <!--自选，沪深，新股，港股，个股期权字体颜色-->
+    <color name="n_prices_optional1">#3d3d3d</color>
+
+    <!-- 主题导航透明色 -->
+    <color name="price_bg_nav_transparent">#00000000</color>
+
+    <!-- lv_devider_line_color 名称代码 最新价的title -->
+    <color name="lv_devider_line_color">#E9E9E9</color>
+
+    <!-- 沪深下拉列表字体颜色 -->
+    <color name="price_tc_hushen_header_content_gray">@color/price_common_gray3</color>
+
+    <!-- 沪深下拉列表字体颜色 -->
+
+    <!--More模块-->
+    <color name="background_navigationbar">#232328</color>
+    <!--<color name="background_openaccount">#F6F6F6</color>-->
+    <color name="background_openaccount">#ffffff</color>
+    <color name="red_openaccount">#D41222</color>
+
+    <!--拍照-->
+    <color name="background_takephoto">#f9f9f9</color>
+    <color name="error_text">#D80C18</color>
+    <color name="main_btn_pressed">#8d7931</color>
+</resources>

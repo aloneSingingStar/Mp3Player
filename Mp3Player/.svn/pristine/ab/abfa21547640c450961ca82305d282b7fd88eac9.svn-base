@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Mp3ListActivity">
+    <item android:id="@+id/menu_update_list" android:title="@string/menu_update_list"
+        android:orderInCategory="100" android:showAsAction="never" />
+    <item android:id="@+id/menu_about" android:title="@string/menu_about"
+    android:orderInCategory="100" android:showAsAction="never" />
+</menu>
+<!-- From: file:/G:/WorkSpace/AndroidStudioProjects/Mp3Player/app/src/main/res/menu/menu_mp3_list.xml -->
